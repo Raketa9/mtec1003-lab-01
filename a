@@ -1,4 +1,4 @@
-MTEC1003 — LAB 01 (revised 8/8/20 —lg)
+MTEC1003 — LAB 01
 
 Lab 1 / Part 1 - Entering Commands
 ==========
@@ -9,18 +9,11 @@ Follow the instructions line-by-line.
 * "No output" or "nothing happens" are valid answers to any of the questions.
 ==========
 
-1. Open Terminal.  Type:
 
 $ ls<ENTER>
 
-Copy and paste the output of ls below.
-----------
-
-
-
-HP@LAPTOP-TVGG7H4C MINGW64 ~
-$ ls
 '3D Objects'/
+ ansel/
  AppData/
 'Application Data'@
  Contacts/
@@ -31,85 +24,60 @@ $ ls
  Downloads/
  Dropbox/
  Favorites/
+ foo/
+ food/
  Links/
 'Local Settings'@
  MicrosoftEdgeBackups/
+ mtec1003/
+ mtec1003-lab-02.tar.gz
  Music/
 'My Documents'@
  NetHood@
- NTUSER.DAT
- ntuser.dat.LOG1
- ntuser.dat.LOG2
- NTUSER.DAT{f8cff75d-f3f1-11ea-b731-ba0ad906b3df}.TM.blf
- NTUSER.DAT{f8cff75d-f3f1-11ea-b731-ba0ad906b3df}.TMContainer00000000000000000001.regtrans-ms
- NTUSER.DAT{f8cff75d-f3f1-11ea-b731-ba0ad906b3df}.TMContainer00000000000000000002.regtrans-ms
- ntuser.ini
- OneDrive/
- Pictures/
- PrintHood@
- Recent@
-'Saved Games'/
- Searches/
- SendTo@
-'Start Menu'@
- Templates@
- Videos/
-'zarinka.barsh@gmail.com Creative Cloud Files'/
-
-HP@LAPTOP-TVGG7H4C MINGW64 ~
-$ ^C
-
-HP@LAPTOP-TVGG7H4C MINGW64 ~
-$ ^C
-
-HP@LAPTOP-TVGG7H4C MINGW64 ~
-$
 
 
 
 
 
-==========
-2.  Type:
 
 $ ls -l Documents<ENTER>
 
-Copy and paste the first *two lines* of output below.
-----------
+first *two lines* 
 
-total 989
+total 1293ls 
 -rw-r--r-- 1 HP 197121   1002 Aug 20 15:49  addmission.txt
-drwxr-xr-x 1 HP 197121      0 Sep 10 17:21  Adobe/
-==========
-3.  Type:
+drwxr-xr-x 1 HP 197121      0 Oct  7 19:31  Adobe/
+
+
+
+
 
 $ ls -a Documents
 
 Copy and paste the first *two lines* of output below.
 ----------
-
- ./               essay.txt             'RAKETA LLC'/
- ../             'HRA MOM.jpg'           Records_Request_Form.pdf
-
+./
+ ../
 
 
 
 
-
-==========
-4.  Type:
 
 $ ls doesnotexist
 
 Copy and paste the output below.
-----ls: cannot access '
+----------
 
+ls: cannot access 'doesnotexist': No such file or directory
+
+ls: cannot access 'doesnotexist': No such file or directory
 
 ==========
 5.  What key do I press to go to the previous command?
 ----------
-Top arrow key
 
+
+^ “UP”
 
 
 ==========
@@ -135,8 +103,9 @@ ls
 8.  What's one an argument that we've so far passed to a command?
 ----------
 
-
 Documents
+
+
 
 
 ==========
@@ -147,8 +116,9 @@ $ foo<ENTER>
 Copy and paste the output below.
 ----------
 
+'foo' is not recognized as an internal or external command,
+operable program or batch file.
 
-bash: foo: command not found
 
 
 
@@ -161,15 +131,8 @@ Copy and paste the output below.
 ----------
 
 
- ./                                desktop.ini
- ../                               Documents.lnk*
-'0526 runway towing Capture.PNG'   eStmt_2020-06-17.pdf
- 1x/                               Outlook.url
- assignement1_bk.png               Slack.lnk*
- assignement1_tr-01.png            Untitled-4.ai
- assignement1_tr-02.png           'Visual Studio Code.lnk'*
- Atom.lnk*  
-
+'foo' is not recognized as an internal or external command,
+operable program or batch file.
 
 
 
@@ -181,11 +144,10 @@ $ ls -a Desktop
 Identify the command, flag, argument, and prompt:
 ----------
 
+Command: ls
+Flag: -a
+Prompt: Desktop
 
-$ - promt
-ls- command
-(-a) - flag
-Desktop is an argument
 
 
 Lab 1 / Part 2 - Navigating the File System
@@ -196,23 +158,23 @@ Follow the instructions line-by-line.
 * Enter, tab, up and down are represented by <ENTER><TAB>,<UP> and <DOWN>.
 * "No output" or "nothing happens" are valid answers to any of the questions.
 ==========
-“Nothing happens”
+
 ==========
 12. Open a new terminal window. Create a directory called mtec1002. What command did you use?
 ----------
 
-Mkdir mtec1002
 
+mkdir mtec1002
 
 
 
 ==========
-13. Change your directory so that you're in mtec1003. What command did you use?
+13. Change your directory so that you're in mtec1002. What command did you use?
 ----------
 
 
+cd mtec1003
 
-  cd mtec1003
 
 
 ==========
@@ -228,7 +190,7 @@ Copy and paste the output of pwd below.
 ----------
 
 
-C:\Users\HP\Documents\CITY TECH\MTEC 1003
+C:\Users\HP\mtec1003
 
 
 
@@ -242,48 +204,7 @@ Copy and paste the output below.
 ----------
 
 
-'3D Objects'/
- animals/
- AppData/
-'Application Data'@
- Contacts/
- Cookies@
-'Creative Cloud Files'/
- Desktop/
- Documents/
- Downloads/
- Dropbox/
- Favorites/
- foo/
- food/
- Links/
-'Local Settings'@
- MicrosoftEdgeBackups/
- mtec1003/
- Music/
-'My Documents'@
- NetHood@
- NTUSER.DAT
- ntuser.dat.LOG1
- ntuser.dat.LOG2
- NTUSER.DAT{f8cff75d-f3f1-11ea-b731-ba0ad906b3df}.TM.blf
- NTUSER.DAT{f8cff75d-f3f1-11ea-b731-ba0ad906b3df}.TMContainer00000000000000000001.regtrans-ms
- NTUSER.DAT{f8cff75d-f3f1-11ea-b731-ba0ad906b3df}.TMContainer00000000000000000002.regtrans-ms
- ntuser.ini
- OneDrive/
- Pictures/
- PrintHood@
- Recent@
-'Saved Games'/
- Searches/
- SendTo@
-'Start Menu'@
- Templates@
- Videos/
-'zarinka.barsh@gmail.com Creative Cloud Files'/
-
-
-
+aardvark/  animals/  pineapple/
 
 
 ==========
@@ -296,13 +217,7 @@ Copy and paste the output below.
 ----------
 
 
-
- 
- cmder/        ConEmu.xml             food/                                         PortableGit-2.28.0-64-bit.7z.exe*
- cmder.zip     ConEmu64.exe*          Goldford.MTEC1003.Fall2020.Syllabus.v02.pdf   putty-64bit-0.74-installer.msi
- ConEmu/       ConEmu64.map           LABS/                                         python-3.8.5.exe*
- ConEmu.exe*   ConEmuPack.200713.7z  'New folder'/
- ConEmu.map    drills.py              plugins/
+aardvark/  animals/  food/  pineapple/
 
 
 
@@ -314,35 +229,16 @@ $ ls
 
 Copy and paste the output below.
 ----------
+Name                      Host                  Protocol  User Name  
+------------------------- --------------------- --------- -----------
+aardvark/
+animals/
+foo/
+food/
+-p/
+pineapple/
 
-
-3D Objects'/
- animals/
- AppData/
-'Application Data'@
- Contacts/
- Cookies@
-'Creative Cloud Files'/
- Desktop/
- Documents/
- Downloads/
- Dropbox/
- Favorites/
- foo/
- food/
- Links/
-'Local Settings'@
- MicrosoftEdgeBackups/
- mtec1003/
- Music/
-'My Documents'@
- NetHood@
-
-
-
-
-
-==========
+==========	 
 18. Type:
 
 $ cd foo/bar/baz/qux
@@ -350,10 +246,7 @@ $ pwd
 
 Copy and paste the output below.
 ----------
-
-/c/Users/HP/foo/bar/baz/qux
-
-
+C:\Users\hp\mtec1003\foo\bar\baz\qux
 
 
 
@@ -366,41 +259,42 @@ $ pwd
 
 Copy and paste the output below.
 ----------
-HP@LAPTOP-TVGG7H4C MINGW64 ~/foo/bar/baz/qux
-$ cd ../..
-
-HP@LAPTOP-TVGG7H4C MINGW64 ~/foo/bar
-$ pwd
-/c/Users/HP/foo/bar
-
-HP@LAPTOP-TVGG7H4C MINGW64 ~/foo/bar
-$
 
 
-
-
+C:\Users\hp\mtec1003\foo\bar\baz\qux
 
 
 
 ==========
 20. Type:
 
-$ cd -
+$ cd – (/) win
 $ pwd
 
 Copy and paste the output below.
 ----------
 
-
-
-HP@LAPTOP-TVGG7H4C MINGW64 ~/foo/bar
-$ cd -
-/c/Users/HP/foo/bar/baz/qux
-
-HP@LAPTOP-TVGG7H4C MINGW64 ~/foo/bar/baz/qux
-$ pwd
-/c/Users/HP/foo/bar/baz/qux
-
+Name                      Host                  Protocol  User Name  
+------------------------- --------------------- --------- -----------
+$RECYCLE.BIN/
+$WinREAgent/
+adobeTemp/
+Documents and Settings/
+hp/
+Intel/
+OneDriveTemp/
+PerfLogs/
+Program Files/
+Program Files (x86)/
+ProgramData/
+qux/
+Recovery/
+RM/
+SWSetup/
+System Volume Information/
+SYSTEM.SAV/
+Users/
+Windows/
 
 
 
@@ -413,14 +307,7 @@ $ pwd
 Copy and paste the output below.
 ----------
 
-
-HP@LAPTOP-TVGG7H4C MINGW64 ~/foo/bar/baz/qux
-$ cd ../../../..
-
-HP@LAPTOP-TVGG7H4C MINGW64 ~
-$ pwd
-/c/Users/HP
-
+C;\
 
 
 
@@ -436,12 +323,6 @@ Copy and paste the first 3 lines from the output into the space below.
 ----------
 
 
-$ ls -l
-total 6297
-drwxr-xr-x 1 HP 197121       0 Sep 11 00:50 '3D Objects'/
-drwxr-xr-x 1 HP 197121       0 Sep 11 00:46  AppData/
-lrwxrwxrwx 1 HP 197121      27 Sep 11 00:45 'Application Data' -> /c/Users/HP/AppData/Roaming/
-
 
 
 
@@ -454,12 +335,6 @@ $ pwd
 
 Copy and paste the output into the space below.
 ----------
-
-$ cd ~
-
-HP@LAPTOP-TVGG7H4C MINGW64 ~
-$ pwd
-/c/Users/HP
 
 
 
@@ -475,7 +350,9 @@ $ pwd
 Copy and paste the output into the space below.
 ----------
 
-/Volumes
+
+
+
 
 
 ==========
@@ -502,12 +379,6 @@ Copy and paste the output into the space below.
 ----------
 
 
-HP@LAPTOP-TVGG7H4C MINGW64 ~
-$ cd ~/mtec1003
-
-HP@LAPTOP-TVGG7H4C MINGW64 ~/mtec1003
-$ pwd
-/c/Users/HP/mtec1003
 
 
 
@@ -521,7 +392,7 @@ Copy and paste the output into the space below.
 ----------
 
 
-LAPTOP-TVGG7H4C
+
 
 
 
@@ -531,9 +402,6 @@ LAPTOP-TVGG7H4C
 
 
 
-HP@LAPTOP-TVGG7H4C MINGW64 ~/mtec1003
-$ PWD
-/c/Users/HP/mtec100
 
 
 
@@ -564,7 +432,6 @@ Write the one command you used below:
 ----------
 
 
-$ mkdir -p pineapple/orange/strawberry/lemon
 
 
 
@@ -576,7 +443,7 @@ Write the command you used to create the directory below:
 ----------
 
 
-$ mkdir aardvark
+
 
 
 
@@ -641,7 +508,7 @@ What command did you use?
 37. What command is used to print out your current working directory?
 ----------
 
-
+-pwd
 
 
 
@@ -650,7 +517,7 @@ What command did you use?
 38. What flag do I pass to ls to print out all files?
 ----------
 
-
+-al
 
 
 
@@ -660,7 +527,7 @@ What command did you use?
 ----------
 
 
-
+Cd -
 
 
 
@@ -669,7 +536,7 @@ What command did you use?
 ----------
 
 
-
+Unique location of a file system
 
 
 
@@ -678,11 +545,11 @@ What command did you use?
 ----------
 
 
-
+List of files in a folder
 
 
 
 ==========
 42. What's the *absolute* path (full path, starting at root) to your user's Downloads directory?
 ----------
-
+C:\Users\HP\Downloads
